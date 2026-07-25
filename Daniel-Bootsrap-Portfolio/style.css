@@ -1,0 +1,236 @@
+.card img{
+    height:250px;
+    object-fit:cover;
+}
+
+
+
+
+.card{
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+
+
+
+.card{
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+
+
+
+footer a:hover{
+    color:#1e4e1e !important;
+}
+
+
+
+
+.card{
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+
+
+
+.btn{
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+
+
+
+img{
+    transition:.5s;
+}
+
+img:hover{
+    transform:scale(1.03);
+}
+
+
+
+
+.social-icons a {
+    color: white;
+    font-size: 28px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0a58ca;
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================
+   HERO IMAGE
+=========================== */
+
+.hero-img{
+    width:100%;
+    max-width:400px;
+    height:auto;
+}
+
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width:992px){
+
+    #home{
+        padding-top:70px;
+        padding-bottom:60px;
+    }
+
+    #home .row{
+        text-align:center;
+    }
+
+    #home h1{
+        font-size:3rem;
+    }
+
+    #home h3{
+        font-size:2rem;
+    }
+
+    #home p{
+        font-size:1.1rem;
+    }
+
+    #home .btn{
+        margin:8px;
+    }
+
+    .hero-img{
+        margin-top:40px;
+        max-width:320px;
+    }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    #home{
+        padding-top:60px;
+        padding-bottom:50px;
+    }
+
+    #home h5{
+        font-size:18px;
+    }
+
+    #home h1{
+        font-size:2.5rem;
+    }
+
+    #home h3{
+        font-size:1.6rem;
+    }
+
+    #home p{
+        font-size:1rem;
+    }
+
+    #home .btn{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    .hero-img{
+        max-width:280px;
+        margin-top:35px;
+    }
+
+}
+
+/* ===========================
+   SMALL PHONES
+=========================== */
+
+@media (max-width:480px){
+
+    #home h1{
+        font-size:2rem;
+    }
+
+    #home h3{
+        font-size:1.3rem;
+    }
+
+    #home p{
+        font-size:.95rem;
+    }
+
+    .hero-img{
+        max-width:230px;
+    }
+
+}
+
+/* ===========================
+   VERY SMALL PHONES
+=========================== */
+
+@media (max-width:320px){
+
+    #home h1{
+        font-size:1.8rem;
+    }
+
+    #home h3{
+        font-size:1.1rem;
+    }
+
+    #home h5{
+        font-size:15px;
+    }
+
+    #home p{
+        font-size:.9rem;
+    }
+
+    .hero-img{
+        max-width:200px;
+    }
+
+}
+
+
+
+
+
+
