@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
@@ -22,6 +23,43 @@ function Testimonials() {
 }
 
 export default function App() {
+  useEffect(() => {
+    if (
+      !("IntersectionObserver" in window) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      return undefined;
+    }
+
+    const sections = [...document.querySelectorAll("main > section")];
+    document.body.classList.add("motion-ready");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -36px 0px" },
+    );
+
+    sections.forEach((section) => {
+      section.classList.add("reveal-section");
+      observer.observe(section);
+    });
+
+    return () => {
+      observer.disconnect();
+      document.body.classList.remove("motion-ready");
+      sections.forEach((section) => {
+        section.classList.remove("reveal-section", "is-visible");
+      });
+    };
+  }, []);
+
   return (
     <>
       <Navbar />

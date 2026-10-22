@@ -4,11 +4,11 @@ export const portfolio = {
   name: "Daniel Edjang",
   firstName: "Daniel",
   lastName: "Edjang",
-  title: "Frontend Web Developer",
+  title: "Frontend Developer & UI/UX Designer",
   introduction:
-    "I build responsive websites using HTML, CSS, Bootstrap and JavaScript. I enjoy creating clean, modern and user-friendly web interfaces.",
+    "I'm a Frontend Developer and UI/UX Designer passionate about building modern, responsive, and user-friendly digital experiences. I work with HTML, CSS, Bootstrap, JavaScript, and React to develop interactive web applications. I also use Figma to design intuitive interfaces and SQL Server to work with databases.",
   biography:
-    "I'm a developer based in Port Harcourt, Nigeria, passionate about creating responsive, modern and user-friendly websites. I enjoy solving problems with HTML, CSS, Bootstrap and JavaScript, and keep learning as I build useful digital experiences.",
+    "Based in Port Harcourt, Nigeria, I'm a Frontend Developer and UI/UX Designer passionate about building modern, responsive, and user-friendly digital experiences. I work with HTML, CSS, Bootstrap, JavaScript, and React to develop interactive web applications. I also use Figma to design intuitive interfaces and SQL Server to manage and work with databases. My goal is to combine creativity, technology, and problem-solving to build digital products that look great, work smoothly, and deliver real value.",
   portrait: `${baseUrl}images/profile.jpg.jpeg`,
   cv: `${baseUrl}CV/Daniel_Edjang_Remote_Frontend_CV_Updated.docx`,
   email: "danieledjang1@gmail.com",
@@ -28,8 +28,8 @@ export const portfolio = {
     { label: "Instagram", href: "https://www.instagram.com/danieledjang1" },
   ],
   stats: [
-    { value: "03", label: "Featured projects" },
-    { value: "4+", label: "Core technologies" },
+    { value: "11", label: "Featured projects" },
+    { value: "7+", label: "Tools I work with" },
     { value: "100%", label: "Dedication" },
     { value: "Always", label: "Learning" },
   ],
@@ -38,6 +38,9 @@ export const portfolio = {
     { name: "CSS", category: "Frontend", level: 85, icon: "css" },
     { name: "JavaScript", category: "Frontend", level: 65, icon: "javascript" },
     { name: "Bootstrap", category: "Frontend", icon: "bootstrap" },
+    { name: "React", category: "Frontend", icon: "react" },
+    { name: "Figma", category: "UI/UX Design", icon: "figma" },
+    { name: "SQL Server", category: "Database", icon: "database" },
   ],
   projects: [
     {
@@ -76,13 +79,115 @@ export const portfolio = {
       liveUrl: "https://danieldkitchenrestaurantwebsite.netlify.app",
       repositoryUrl: "",
     },
+    {
+      id: "westhill-hospital",
+      title: "Westhill Hospital",
+      category: "Web Project",
+      description:
+        "A hospital website presenting healthcare services and helping visitors find appointment and patient information.",
+      image: `${baseUrl}images/westhill-hospital-preview.jpg`,
+      imageAlt: "Westhill Hospital website preview",
+      technologies: [],
+      liveUrl: "https://westhillhospital.netlify.app",
+      repositoryUrl: "",
+    },
+    {
+      id: "d-bank",
+      title: "D-Bank",
+      category: "Web Project",
+      description:
+        "A banking application experience with a secure sign-in interface and account registration.",
+      image: `${baseUrl}images/d-bank-preview.jpg`,
+      imageAlt: "D-Bank sign-in page preview",
+      technologies: [],
+      liveUrl: "https://d-bank1.netlify.app",
+      repositoryUrl: "",
+    },
+    {
+      id: "dcraftcart",
+      title: "Dcraftcart",
+      category: "Web Project",
+      description:
+        "A customisation-focused online experience for bringing personal design ideas to life.",
+      image: `${baseUrl}images/dcraftcart-preview.jpg`,
+      imageAlt: "Dcraftcart project website preview",
+      technologies: [],
+      liveUrl: "https://dc-art-cart.netlify.app",
+      repositoryUrl: "",
+    },
+    {
+      id: "dhabbit",
+      title: "Dhabbit Habit Tracker",
+      category: "Web Project",
+      description:
+        "A habit-building experience for tracking small daily wins and developing consistent routines.",
+      image: `${baseUrl}images/dhabbit-preview.jpg`,
+      imageAlt: "Dhabbit Habit Tracker website preview",
+      technologies: [],
+      liveUrl: "https://dhabbit-habit-tracker.netlify.app",
+      repositoryUrl: "",
+    },
+    {
+      id: "dlife-guard-ai",
+      title: "DLife Guard AI",
+      category: "Web Project",
+      description:
+        "A personal AI companion prototype for wellbeing check-ins, everyday questions and routines.",
+      image: `${baseUrl}images/dlife-guard-ai-preview.jpg`,
+      imageAlt: "DLife Guard AI project website preview",
+      technologies: [],
+      liveUrl: "https://dlife-guard-ai.netlify.app",
+      repositoryUrl: "",
+    },
+    {
+      id: "dskilllink",
+      title: "DskillLink",
+      category: "Web Project",
+      description:
+        "A service that helps people discover skilled professionals nearby.",
+      image: `${baseUrl}images/dskilllink-preview.jpg`,
+      imageAlt: "DskillLink project website preview",
+      technologies: [],
+      liveUrl: "https://dskilllink.netlify.app",
+      repositoryUrl: "",
+    },
+    {
+      id: "mrfiga-consult",
+      title: "MrFiga Corporate Consults",
+      category: "Web Project",
+      description:
+        "A corporate consulting website introducing business support services in Port Harcourt.",
+      image: `${baseUrl}images/mrfiga-consult-preview.jpg`,
+      imageAlt: "MrFiga Corporate Consults website preview",
+      technologies: [],
+      liveUrl: "https://mrfiga-corporate-consult.netlify.app",
+      repositoryUrl: "",
+    },
+    {
+      id: "portech-agency",
+      title: "Portech Agency",
+      category: "Web Project",
+      description:
+        "A website agency landing page showcasing web design and digital solutions.",
+      image: `${baseUrl}images/portech-agency-preview.jpg`,
+      imageAlt: "Portech Agency website preview",
+      technologies: [],
+      liveUrl: "https://warm-beignet-2e9b74.netlify.app",
+      repositoryUrl: "",
+    },
   ],
   services: [
     {
       title: "Frontend Development",
       description:
-        "Responsive, accessible interfaces built with HTML, CSS, Bootstrap and JavaScript.",
+        "Responsive, accessible interfaces built with HTML, CSS, Bootstrap, JavaScript and React.",
       icon: "layout",
+    },
+    {
+      title: "UI/UX Design",
+      description:
+        "Intuitive interface layouts and design ideas explored in Figma.",
+      icon: "design",
     },
     {
       title: "Business Websites",
@@ -124,6 +229,7 @@ export const portfolio = {
     { label: "Website maintenance", price: 20000 },
   ],
   contactServices: [
+    "UI/UX Design",
     "Landing Page",
     "Personal Portfolio",
     "Business Website",

@@ -2,9 +2,12 @@ import {
   ArrowDown,
   ArrowDownRight,
   ArrowRight,
+  Atom,
   Code2,
+  Database,
   Download,
   Facebook,
+  Figma,
   Github,
   Globe2,
   Linkedin,
@@ -17,6 +20,16 @@ const socialIcons = {
   GitHub: Github,
   LinkedIn: Linkedin,
   Facebook,
+};
+
+const toolIcons = {
+  html: Code2,
+  css: Code2,
+  javascript: Code2,
+  bootstrap: Globe2,
+  react: Atom,
+  figma: Figma,
+  database: Database,
 };
 
 export default function Hero() {
@@ -68,12 +81,16 @@ export default function Hero() {
         <div className="hero-orbit orbit-one" />
         <div className="hero-orbit orbit-two" />
         <div className="portrait-frame">
-          <img src={portfolio.portrait} alt="Portrait of Daniel Edjang" fetchpriority="high" />
+          <img src={portfolio.portrait} alt="Portrait of Daniel Edjang" />
         </div>
         <div className="tech-float panel">
           <span className="tech-float-title">Tools I work with</span>
-          <span><Code2 size={15} /> HTML · CSS · JavaScript</span>
-          <span><Globe2 size={15} /> Bootstrap</span>
+          <div className="tech-float-list">
+            {portfolio.skills.map((skill) => {
+              const Icon = toolIcons[skill.icon] || Code2;
+              return <span key={skill.name}><Icon size={14} /> {skill.name}</span>;
+            })}
+          </div>
         </div>
         <div className="hero-note">Let&apos;s build<br />something great <ArrowDownRight size={28} /></div>
         <a href="#about" className="scroll-hint">

@@ -2,6 +2,7 @@ import {
   ArrowRight,
   Building2,
   Layout,
+  Palette,
   PanelsTopLeft,
   TabletSmartphone,
   UserRound,
@@ -12,6 +13,7 @@ import SectionHeading from "./SectionHeading.jsx";
 
 const serviceIcons = {
   layout: Layout,
+  design: Palette,
   building: Building2,
   user: UserRound,
   panels: PanelsTopLeft,

@@ -3,7 +3,7 @@ import { ArrowUpRight, Code2, ExternalLink } from "lucide-react";
 import { portfolio } from "../data/portfolioData.js";
 import SectionHeading from "./SectionHeading.jsx";
 
-const filters = ["All", "Full Stack", "Frontend", "Backend"];
+const filters = ["All", "Frontend", "Web Project", "Full Stack", "Backend"];
 
 function ProjectCard({ project }) {
   return (
@@ -16,7 +16,9 @@ function ProjectCard({ project }) {
         <div className="project-heading"><h3>{project.title}</h3><span>{project.category}</span></div>
         <p>{project.description}</p>
         <div className="technology-tags">
-          {project.technologies.map((technology) => <span key={technology}>{technology}</span>)}
+          {project.technologies.length > 0
+            ? project.technologies.map((technology) => <span key={technology}>{technology}</span>)
+            : <span>Open project to explore</span>}
         </div>
         <div className="project-actions">
           {project.liveUrl && <a className="button button-primary button-small" href={project.liveUrl} target="_blank" rel="noreferrer"><ExternalLink size={14} /> Live demo</a>}
